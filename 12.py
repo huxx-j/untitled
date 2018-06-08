@@ -22,7 +22,6 @@ class Ui_naver(object):
         self.Down_Button = QtWidgets.QPushButton(naver)
         self.Down_Button.setGeometry(QtCore.QRect(300, 40, 75, 23))
         self.Down_Button.setObjectName("Down_Button")
-
         self.retranslateUi(naver)
         self.URL_Box.returnPressed.connect(self.Down_Button.click)
         self.Down_Button.clicked.connect(naver.slot1_1st)

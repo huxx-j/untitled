@@ -2,6 +2,8 @@
 from PyQt5.QtWidgets import QWidget, QPushButton, QLabel, QVBoxLayout, QApplication
 from PyQt5.QtCore import QObject, pyqtSlot, QThread
 import sys
+from PyQt5.QtCore import pyqtSignal, pyqtSlot
+import time
 
 # // widget UI setting
 class Window(QWidget):
@@ -55,8 +57,7 @@ class Example(QObject):
             self.worker_thread.start()
 
 # // 추가 모듈
-from PyQt5.QtCore import pyqtSignal, pyqtSlot
-import time
+
 
 # // 백그라운드에서 돌아갈 함수 class
 class Worker(QObject):
